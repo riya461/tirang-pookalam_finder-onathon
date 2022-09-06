@@ -18,7 +18,9 @@
     {% endfor %}
     </ul>
       <form>
+        {% csrf_token %}
         <input type="button" value = "Back to Home page " onclick="history.back()">
+        {% csrf_token %}
       </form>
     </body>
     
